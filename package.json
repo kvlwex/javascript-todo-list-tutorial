@@ -1,0 +1,18 @@
+{
+  "name": "javascript-todo-list-tutorial",
+  "version": "1.0.0",
+  "description": "Todo List на Vanilla JavaScript с архитектурой в стиле Elm/TEA.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "todo",
+    "vanilla-js",
+    "tea",
+    "localstorage"
+  ],
+  "author": "",
+  "license": "MIT"
+}

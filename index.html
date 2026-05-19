@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="todo-app" aria-labelledby="app-title">
+        <header class="app-header">
+          <p class="eyebrow">Vanilla JS · TEA · LocalStorage</p>
+          <h1 id="app-title">Todo List</h1>
+          <p class="subtitle">Список задач с фильтрами, редактированием и локальным сохранением.</p>
+        </header>
+
+        <form class="todo-form" data-testid="todo-form">
+          <label class="sr-only" for="todo-input">Новая задача</label>
+          <input
+            id="todo-input"
+            class="todo-input"
+            data-testid="todo-input"
+            name="title"
+            type="text"
+            maxlength="120"
+            placeholder="Что нужно сделать?"
+            autocomplete="off"
+          />
+          <button class="primary-button" type="submit">Добавить</button>
+        </form>
+
+        <div class="toolbar" aria-label="Фильтры списка">
+          <a class="filter-link" href="#/all" data-filter="all">Все</a>
+          <a class="filter-link" href="#/active" data-filter="active">Активные</a>
+          <a class="filter-link" href="#/completed" data-filter="completed">Выполненные</a>
+        </div>
+
+        <ul class="todo-list" data-testid="todo-list" aria-live="polite"></ul>
+
+        <footer class="app-footer">
+          <span data-testid="todo-counter">0 активных</span>
+          <button class="ghost-button" data-testid="clear-completed" type="button">Очистить выполненные</button>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
