@@ -1,5 +1,8 @@
 # JavaScript Todo List Tutorial
 
+Демонстрация работы программы:
+
+![Demo](gif.gif)
 [![Maintainability](https://api.codeclimate.com/v1/badges/00000000000000000000/maintainability)](https://codeclimate.com/github/USERNAME/javascript-todo-list-tutorial/maintainability)
 
 Todo List на Vanilla JavaScript, сделанный как учебный проект по веб-разработке. Приложение позволяет добавлять, редактировать, выполнять, удалять и фильтровать задачи. Состояние сохраняется в `localStorage`, поэтому список остается доступен после перезагрузки страницы. Архитектура проекта разделена на модули в стиле Elm/TEA: состояние, обновление, отображение, маршрутизация и хранение данных.
